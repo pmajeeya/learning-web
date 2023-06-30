@@ -154,9 +154,6 @@ header {
     text-transform: uppercase;
 }
 .benefits .benefits_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 35px;
 }
 .benefits .benefits_round {
@@ -170,7 +167,7 @@ header {
     background-color: #1eacc7;
 }
 .benefits .benefits_text {
-    width: 341px;
+    padding: 0;
 }
 .benefits .benefits_text1 {
     width: 341px;
