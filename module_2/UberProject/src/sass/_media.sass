@@ -50,10 +50,9 @@
         padding-top: 35px
         .title, .subtitle
             display: none
-        img
-            height: 300px
-        .undercar
-            color: white
+            min-height: 390px
+    .require
+        padding: 180px 0 84px 0
     .benefits
         &_item
             align-items: center
@@ -61,6 +60,21 @@
         &_text
             margin-top: 20px
             width: 300px
+    .footer
+        &_wrap
+            flex-direction: column
+            align-items: center
+            > div
+                width: 100%
+                &:nth-child(3)
+                    justify-content: center
+        &_lg1
+            margin-top: 20px
+            justify-content: center
+            order: 2
+        &_lg2
+            margin-top: 20px
+            order: 3
 @media (max-width: 767px)
     .menu
         position: fixed
@@ -126,11 +140,53 @@
         &_official
             display: none
         &_logo
-            margin: auto 0
+            margin-top: 22px
     .promo
         &_header
             font-size: 40px
             line-height: 45px
-    .require
-        &_list
-            margin: 33px 0 45px 0
+    .requiere_list
+        margin: 33px 0 0 0
+@media (max-width: 575px)
+    header
+        height: 30px
+    .subheader
+        margin-top: 30px
+        height: 60px
+        &_phone
+            font-size: 12px
+            margin-top: 12px
+        &_btn
+            height: 22px
+            width: 110px
+            font-size: 8px
+    nav
+        height: 30px
+    .promo
+        min-height: 430px
+        padding: 135px 0 35px 0
+        &_header
+            font-size: 48px
+        &_subheader
+            font-size: 27px
+            line-height: 27px
+            font-weight: 400
+        &_descr
+            display: none
+        &_btn
+            margin: 71px auto 0 auto
+            height: 50px
+    .benefits
+        padding: 22px 0 50px 0
+        &_item
+            margin-top: 25px
+    .title
+        margin-top: 15px
+        font-size: 29px
+        margin-bottom: 0
+@media (max-width: 576px)
+    .choice > img
+        width: 100%
+    .footer
+        &_box
+            width: 100%
