@@ -41,6 +41,7 @@
     }
     &__wrap {
         display: none;
+        justify-content: space-between;
         flex-wrap: wrap;
         transition: 1s all;
         &_active {
@@ -49,8 +50,9 @@
     }
 }
 .card {
-    margin: 10px 20px 10px 0;
+    margin: 10px 0 10px 0;
     width: 300px;
+    overflow: hidden;
     min-height: 440px;
     border: 2px solid #e8e8e8;
     color: #0d0d0d;
@@ -100,7 +102,7 @@
         font-weight: 300;
         text-decoration: line-through;
     }
-    &__nevprice {
+    &__newprice {
         color: #050505;
         font-size: 20px;
         font-weight: 700;
@@ -115,9 +117,14 @@
         list-style-type: none;
         color: #555555;
         font-size: 14px;
+        line-height: 14px;
         font-weight: 300;
         padding-left: 19px;
         text-align: left;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -128,17 +135,34 @@
             background-color: #c70101;
         }
     }
+    &__wrap {
+        display: flex;
+        width: calc(200% + 20px);
+
+    }
     &__image {
-        display: none;
-        transition: 1s all;
+        width: 50%;
+        transform: translateX(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.5s all;
         &_active {
-            display: block;
+            transform: translateX(0%);
         }
     }
     &__more {
-        display: none;
+        position: relative;
+        width: 50%;
+        transform: translateX(0%);
+        padding-right: 10px;
+        transition: 0.5s all;
+        margin-left: 19px;
+        margin-bottom: 0;
+        list-style-type: none;
         &_active {
-            display: block;
+            margin-left: 0;
+            transform: translateX(-100%);
+        }
         }
     }
-}

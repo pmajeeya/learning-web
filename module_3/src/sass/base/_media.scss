@@ -1,9 +1,22 @@
 @media (max-width: 991px) {
     .container {
         width: 70%;
+        overflow: hidden;
     }
-    .header__logo {
-        max-width: 33%;
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__logo {
+            max-width: 100%;
+        }
+        &__contacts {
+            margin-top: 15px;
+        }
+    }
+    .promo{
+        &__wrap {
+            align-items: center;
+        }
     }
     .advantages__item {
         margin-bottom: 20px;
@@ -11,32 +24,78 @@
             margin: 0;
         }
     }
+    .slider  {
+        .container {
+            width: 100%;
+        }
+        &__inner{
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            width: 100%;
+        }
+        &__tab {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            }
+        }
 }
 @media (max-width: 767px) {
-    .header {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    &__logo {
-        max-width: 100%;
+    .promo {
+        &__wrap {
+            margin-top: 61px;
+        }
     }
+    .card {
+        width: 100%;
+    }
+    .slider {
+        display: none;
+    }
+    .catalog {
+        padding-top: 70px;
     }
 }
 @media (max-width: 575px) {
     .header {
         flex-direction: column;
-    &__logo, &__official {
+        &__logo, &__official {
         margin-bottom: 15px;
         }
-    &__titile {
-        font-size: 38px;
+        &__titile {
+            font-size: 38px;
+        }
+        &__subtitle {
+            font-size: 21px;
+        }
+        &__contacts {
+            margin-top: 0;
+            align-items: center;
+        }
     }
-    &__subtitle {
-        font-size: 21px;
+    .promo {
+    &__header {
+        font-size: 32px;
     }
+    &__subheader {
+        font-size: 20px;
     }
-    .promo__icons {
+    &__icons {
         justify-content: space-around;
         flex-wrap: wrap;
         max-width: 100%;
+    }
+    }
+    .consult {
+        &__descr {
+            text-align: center;
+        }
     }
 }

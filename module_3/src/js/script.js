@@ -2,12 +2,15 @@ $(document).ready(function(){
     $('.slider__inner').slick({
         prevArrow: '<button type="button" class="slick-prev"><img src="./img/slider/arrow-icon.svg" alt="arrow"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="./img/slider/arrrow.svg"></button>',
+        dotsClass: 'slider__dots',
+        adaptiveHeight: true,
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 992,
                 settings: {
                     dots: true,
-                    arrows: false
+                    arrows: false,
                 }
             }
         ]

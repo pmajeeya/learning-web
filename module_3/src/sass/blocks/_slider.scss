@@ -2,7 +2,8 @@
     padding: 108px 0;
     &__inner {
         margin: 0 auto;
-        width: 750px;
+        max-width: 750px;
+        // max-width: 83%;
     }
     .slick-prev, .slick-next {
         width: 31px;
@@ -17,5 +18,32 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+    &__dots {
+        display: flex;
+        width: 250px;
+        list-style-type: none;
+        margin: 10px auto 0 auto;
+        padding-left: 0;
+        transition: 0.5s all;
+        li {
+            margin: 0 auto;
+            width: 33%;
+            button {
+                content:'';
+                padding: 0;
+                margin: 0 28px;
+                width: 28px;
+                height: 28px;
+                border-radius: 100%;
+                border: #fff;
+                background-color: rgba($color: #4f4e4e, $alpha: 0.1)
+            }
+        }
+        .slick-active {
+            button {
+                background-color: #ff0000cf;
+            }
+        }
     }
 }
