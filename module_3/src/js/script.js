@@ -33,4 +33,17 @@ $(document).ready(function(){
   };
   toggleSlide('.card__a');
   toggleSlide('.card__ab');
-})
+
+  $('[data-modal=consultation]').on('click', function() {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+  $('.modal__close').on('click', function(){
+    $('.overlay, #thanks, #consultation, #order').fadeOut('slow');
+  });
+  $('.button_min').each(function(i) {
+    $(this).on('click', function() {
+        $('#order .modal__subtitle').text($('.card__title').eq(i).text());
+        $('.overlay, #order').fadeIn('slow');
+    })
+  });
+});
