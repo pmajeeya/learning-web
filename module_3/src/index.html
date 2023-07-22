@@ -86,7 +86,7 @@
                 по подбору пульсометра </h2>
             <div class="consult__descr">Просто заполните форму заявки <br>
                 и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input required name="name" placeholder="Ваше имя" type="text">
                 <input required name="phone" placeholder="Ваш телефон" type="tel">
                 <input required name="email" placeholder="Ваш E-mail" type="email">
@@ -617,9 +617,9 @@
             <div class="modal__subtitle">и мы перезвоним вам в течении 10 минут</div>
             <div class="modal__form">
                 <form class="feed-form feed-form_mt25" action="#">
-                    <input required name="name" placeholder="Ваше имя" type="text">
-                    <input required name="phone" placeholder="Ваш телефон" type="tel">
-                    <input required name="email" placeholder="Ваш E-mail" type="email">
+                    <input name="name" placeholder="Ваше имя" type="text">
+                    <input name="phone" placeholder="Ваш телефон" type="tel">
+                    <input name="email" placeholder="Ваш E-mail" type="email">
                     <button class="button button_submit">заказать консультацию</button>
                 </form>
             </div>
@@ -647,6 +647,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
