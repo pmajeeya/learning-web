@@ -1,0 +1,15 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 5vh;
+    right: 3vw;
+    img {
+        width: 4vh;
+        height: 4vh;
+        fill: rgba(255, 0, 0, 0.35);
+        transition: 0.5s all;
+        &:hover {
+            fill: rgba(255, 0, 0, 1);
+        }
+    }
+}

@@ -4,11 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Run smart</title>
-    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Pulse</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -95,15 +91,15 @@
             </form>
         </div>
     </section>
-    <section class="slider">
+    <div class="slider">
         <div class="container">
             <div class="slider__inner">
-                <div><img src="./img/slider/1.png"></div>
-                <div><img src="./img/slider/2.png"></div>
-                <div><img src="./img/slider/3.png"></div>
+                <div><img src="./img/slider/1.png" alt="pulseometer 'Polar"></div>
+                <div><img src="./img/slider/2.png" alt="pulseometer 'Polar"></div>
+                <div><img src="./img/slider/3.png" alt="pulseometer 'Polar"></div>
             </div>
         </div>
-    </section>
+    </div>
     <section id="catalog" class="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
@@ -130,6 +126,7 @@
                             <a href="#" class="card__a">подробнее</a>
                         </div>
                         <div class="card__more ">
+                            <!-- a bug i cant fix -->
                             <ul class="card__list">
                                 <li class="card__listitem">Вы услышите звуковое оповещение о нужном пульсе во время
                                     тренировки;</li>
@@ -586,22 +583,21 @@
     <footer class="footer">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4304816259173!2d37.64442107701088!3d55.76839497309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2sMyasnitskiy%20Proyezd%2C%204%2F3%2C%20Moskva%2C%20Russia%2C%20107078!5e0!3m2!1sen!2sth!4v1689856908794!5m2!1sen!2sth"
-            width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="footer__info">
             <address class="footer__address">Москва, Мясницкий проезд, д.3с1</address>
-            <a href="+74999228974" class="footer__phone" type="phone">8 (499) 922-89-74</a>
+            <a href="tel:+74999228974" class="footer__phone">8 (499) 922-89-74</a>
             <div class="footer__socials">
                 <div class="footer__round">
                     <a href="#">
                         <img src="./icons/footer/fb.png" alt="icon" class="footer__icon">
+                    </a>
                 </div>
-                </a>
                 <div class="footer__round">
                     <a href="#">
                         <img src="./icons/footer/inst.png" alt="icon" class="footer__icon">
+                    </a>
                 </div>
-                </a>
                 <div class="footer__round">
                     <a href="#">
                         <img src="./icons/footer/pinterest.png" alt="icon" class="footer__icon">
@@ -644,13 +640,15 @@
             <div class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
-    <a href="#top" class="pageup">^</a>
+    <a href="#top" class="pageup">
+        <img src="./icons/pageup.svg" alt="Page up">
+    </a>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
