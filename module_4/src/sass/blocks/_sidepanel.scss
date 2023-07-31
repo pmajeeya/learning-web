@@ -1,0 +1,25 @@
+.aside {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: -100px;
+    transform: rotate(-90deg) ;
+    width: 339px;
+    z-index: 10;
+    &__divider {
+        width: 70px;
+        height: 2px;
+        background-color: #000;
+        margin-left: 15px;
+    }
+    &__icon {
+        // width: 20px;
+        height: 20px;
+        margin-left: 15px;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

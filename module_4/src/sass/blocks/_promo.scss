@@ -1,46 +1,32 @@
 .promo {
-    min-height: calc(100vh - 206px);
-    background: url('../img/Background.jpg') center (center / cover) no-repeat;
+    min-height: calc(100vh - 205px);
+    background: url('../img/Background.jpg') no-repeat 50%/cover;
     position: relative;
-    padding-top: 206px;
+    padding-top: 205px;
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+    }
     &__btns {
         margin-top: 25px;
+        width: 250px;
         display: flex;
         align-items: baseline;
+        justify-content: space-between;
     }
-    &__about {
+    &__link {
         color: #000;
+        font-weight: 700;
         text-decoration: none;
-        padding-left: 44px;
-    }
-
-    &-socials {
-        width: 339px;
-        height: 20px;
-        position: absolute;
-        left: -125px;
-        top: 50%;
-        display: flex;
-        align-items: center;
-        transform: rotate(-90deg);
-        z-index: 1;
-        &__text {
-            font-size: 16px;
-            font-weight: 700;
-        }
-        &__icon {
-            width: 20px;
-            height: 20px;
-            margin-left: 15px;
-            &s {
-                height: 20px
-            }
+        &:hover {
+            color: #000;
         }
     }
 
-    &-hamburger {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
 }

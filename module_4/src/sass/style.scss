@@ -1,7 +1,7 @@
 @import 'libs/font';
 
-@import 'base/mixins';
 @import 'base/variables';
+@import 'base/mixins';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -16,7 +16,8 @@
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/buttons';
-@import 'blocks/elements';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
 @import 'blocks/about';
 
 @import 'base/media';
