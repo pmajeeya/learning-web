@@ -1,0 +1,20 @@
+.price {
+    margin-top: 66px;
+    &__grid {
+        padding-top: 60px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / 366px 366px;
+        gap: 15px 307px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__price {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__descr {
+        font-size: 12px;        
+    }       
+}

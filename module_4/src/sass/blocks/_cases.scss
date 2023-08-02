@@ -1,0 +1,13 @@
+.cases {
+    &__grid {
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        gap: 5px;
+    }
+    &__photo {
+        &1 {
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+    }
+}

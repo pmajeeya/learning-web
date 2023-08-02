@@ -1,24 +1,28 @@
-.container_grid {
-    display: grid;
-    grid-template: 243px 357px / 400px 640px; 
-    column-gap: 70px;
-    row-gap: 40px;
-}
-.line {
-    width: 60px;
-    height: 3px;
-    background-color: $main_color;
-}
 .about {
-    min-height: calc(90vh - 120px);
+    padding: top 120px;
     padding-top: 120px;
+    &__wrap {
+        display: grid;
+        grid-template: 243px 357px / 400px 640px; 
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+    .line {
+        margin: 0;
+    }
     &__img {
         grid-row-start: 1;
         grid-row-end: 3;
         width: 400px;
         height: 600px;
     }
+    &__subtitle {
+        position: relative;
+        padding-left: 12px; 
+        @include before_circle;
+    }
     &__me {
+        padding-top: 6px;
         grid-column-start: 2;
         grid-row-end: 2;
         width: 100%;
