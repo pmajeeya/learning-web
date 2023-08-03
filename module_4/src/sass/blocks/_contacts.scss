@@ -1,0 +1,22 @@
+.contacts {
+    &__grid {
+        margin-top: 120px;
+        display: grid;
+        grid-template: 226px 374px / 400px 600px;
+    }
+    &__wrap {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    &__photo {
+        grid-row: span 2;
+    }
+    .button {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+    &__form {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+}

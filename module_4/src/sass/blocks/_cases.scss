@@ -1,5 +1,19 @@
 .cases {
+    margin-top: 125px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
     &__grid {
+        margin-top: 60px;
         display: grid;
         grid-template: repeat(2, 280px) / repeat(4, 280px);
         gap: 5px;
