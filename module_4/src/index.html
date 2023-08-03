@@ -645,10 +645,10 @@
         <div class="container contacts__grid">
             <img src="img/Photo.jpg" alt="Me" class="contacts__photo">
             <div class="contacts__wrap">
-                <h2 class="contacts__title">Контакты</h2>
-                <div class="contacts__subtitle">Свяжитесь со мной</div>
+                <h2 class="contacts__title title title_fs16">Контакты</h2>
+                <div class="contacts__subtitle title">Свяжитесь со мной</div>
                 <div class="line"></div>
-                <div class="contacts__or">Любым удобным для вас способом:</div>
+                <div class="contacts__or title_fs14 title">Любым удобным для вас способом:</div>
                 <div class="contacts__socials">
                     <a href="#" class="contacts__icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                             viewBox="0 0 30 30" fill="none">
@@ -675,10 +675,23 @@
                                 fill="black" />
                         </svg></a>
                 </div>
-                <div class="contacts__self">Или оставьте ваши данные и я сама вам напишу:</div>
+                <div class="contacts__self title title_fs14">Или оставьте ваши данные и я сама вам напишу:</div>
             </div>
-            <div class="contacts__form"></div>
-            <div class="button"></div>
+            <form action="#" class="contacts__form-grid">
+                <div class="contacts__input">
+                    <input name="name" id="name" type="text" class="contacts__put"></input>
+                    <label for="name">Ваше имя</label>
+                </div>
+                <div class="contacts__input">
+                    <input name="email" id="email" type="email" class="contacts__put"></input>
+                    <label for="email">Ваша почта</label>
+                </div>
+                <div class="contacts__textarea">
+                    <textarea name="message" id="message" type="text" class="contacts__put"></textarea>
+                    <label for="message">Ваше сообщение</label>
+                </div>
+            </form>
+            <div class="button">Отправить сообщение</div>
         </div>
     </section>
     <script src="js/script.js"></script>
