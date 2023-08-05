@@ -20,7 +20,7 @@
         padding-left: 40px; 
         width: 345px;
         background-color: $main_color;
-        height: calc(100% - 140px);
+        height: 100vh;
         transition: all .6s;
     }
     &__close {

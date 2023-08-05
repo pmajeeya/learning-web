@@ -1,5 +1,5 @@
 .promo {
-    min-height: calc(100vh - 205px);
+    min-height: 100vh;
     background: url('../img/Background.jpg') no-repeat 50%/cover;
     position: relative;
     padding-top: 205px;
@@ -10,7 +10,7 @@
         @include before_circle;
     }
     &__title {
-        width: 535px;
+        width: 60%;
         margin-top: 10px;
     }
     &__btns {

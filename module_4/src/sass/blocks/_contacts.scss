@@ -10,16 +10,14 @@
         grid-row: span 1;
     }
     &__photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         grid-row: span 2;
     }
     .line {
         margin: 0;
         margin-top: 4px;
-    }
-    .button {
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-        place-self: end start;
     }
     &__form-grid {
         margin-top: 30px;
@@ -28,21 +26,11 @@
         display: grid;
         grid-template: 45px 190px / 1fr 1fr;
         gap: 30px 25px;
-        label {
-            position: absolute;
-            display: block;
-            height: 18px;
-            padding: 0 8px;
-            top: -7px;
-            left: 12px;
-            font-size: 12px;
-            font-weight: 500;
-            background-color: #fff;
-        }
     }
     &__title {
         position: relative;
         padding-left: 16px;
+        margin-top: 4px;
         @include before_circle;
     }
     &__subtitle {
@@ -70,13 +58,61 @@
             resize: none;
             width: 100%;
             height: 100%;
+            font-style: 12px;
+            padding: 20px;
         }
     }
-    &__input {
+    &__input, &__textarea {
         input {
             width: 100%;
             height: 100%;
+            font-size: 12px;
+            padding: 0 20px;
+        }
+        label {
+            position: absolute;
+            display: block;
+            height: 18px;
+            padding: 0 8px;
+            top: -7px;
+            left: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            background-color: #fff;
         }
         position: relative;
     }
+    &__input {
+        grid-column: span 1;
+    }
+    &__triggers {
+        grid-column: span 2;
+        row-gap: 35px;
+        display: grid;
+        grid-template-columns: repeat(2, auto); 
+        &-policy {
+            place-self: center center;
+            font-size: 12px;
+            grid-column: 2 / 3;
+            grid-row: span 1 /2;
+            display: flex;
+            align-content: center;
+            input {
+                margin-right: 10px;
+            }
+        }
+        button {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover {
+                box-shadow: 0 4px 4px 0 grey;
+                color: #000;
+            }
+        }
+    }
+
 }
