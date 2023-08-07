@@ -15,7 +15,8 @@
     &__grid {
         margin-top: 60px;
         display: grid;
-        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        grid-template: repeat(2, 280px) / repeat(4, 279px);
+        justify-content: center;
         gap: 5px;
     }
     &__photo {

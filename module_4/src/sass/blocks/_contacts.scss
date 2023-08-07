@@ -2,8 +2,9 @@
     &__grid {
         padding: 120px 32px 91px 52px;
         display: grid;
-        grid-template: 226px 374px / 400px 600px;
+        grid-template-columns: 400px 600px;
         column-gap: 68px;
+        justify-content: center;
     }
     &__wrap {
         grid-column: span 1;
@@ -90,11 +91,12 @@
         row-gap: 35px;
         display: grid;
         grid-template-columns: repeat(2, auto); 
+        column-gap: 35px;
         &-policy {
             place-self: center center;
             font-size: 12px;
             grid-column: 2 / 3;
-            grid-row: span 1 /2;
+            grid-row: span 1;
             display: flex;
             align-content: center;
             input {

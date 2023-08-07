@@ -14,8 +14,10 @@
     }
     &__grid{
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-template: 270px / repeat(auto-fill, 270px);
     grid-auto-rows: 270px;
+    grid-auto-columns: 270px;
+    justify-content: center;
     gap: 13px;
     margin-top: 60px;
     }
@@ -23,7 +25,8 @@
         &__grid {
             margin-top: 120px;
             display: grid;
-            grid-template: repeat(2, 70px) / repeat(3, 1fr);
+            grid-template: repeat(2, 70px) / repeat(auto-fill, 347px);
+            justify-content: center;
             column-gap: 45px;
             row-gap: 38px;
         }
@@ -40,6 +43,13 @@
     &__title {
         font-weight: 700;
         margin-top: 15px;
+    }
+    &__icon {
+        height: 65px;
+        svg {
+            display: block;
+            margin: auto 0;
+        }
     }
     &__descr {
         margin-top: 20px;
