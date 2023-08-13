@@ -1,0 +1,13 @@
+.title {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    &_black {
+        color: #393939;
+    }
+    &_fz48 {
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+}

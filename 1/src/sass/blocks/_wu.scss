@@ -1,0 +1,48 @@
+.wu {
+    margin: 80px 0;
+    &__cgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 360px);
+        column-gap: 30px;
+        row-gap: 30px;
+        &_sbg
+        >.wu__card {
+            background: 100% 100% url('/icons/2/2cid.png') no-repeat;
+        >.wu-c__descr {
+            font-weight: 700;
+            }
+        }
+    }
+    &__card {
+        width: 360px;
+        height: 255px;
+        border: 1px solid #ececec;
+        background: 100% 100% url('/icons/2/2ci.png') no-repeat;
+        padding: 0 50px;
+    }
+    &__arrow {
+        margin: 50px auto 33px auto;
+        width: max-content;
+    }
+    &__title {
+        color: #393939;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 37px;
+    }
+    &-c {
+        &__icon {
+            margin: 0 auto;
+            width: min-content;
+        }
+        &__descr {
+            color: #393939;
+            transform: translateY(-9px);
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}

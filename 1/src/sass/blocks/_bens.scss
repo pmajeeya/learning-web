@@ -1,0 +1,50 @@
+.bens {
+    padding: 80px 0;
+    &__grid {
+        margin-top: 44px;
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(auto-fill, 570px);
+    }
+    &__item {
+        background: url('../../img/4/4bg1.png') center (center / cover) no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 570px;
+        height: 355px;
+        padding: 0 116px;
+        &_bg2 {
+            background: url('../../img/4/4bg2.png') center (center / cover) no-repeat;
+        }
+        &_bg3 {
+            background: url('../../img/4/4bg3.png') center (center / cover) no-repeat;
+        }
+        &_bg4 {
+            background: url('../../img/4/4bg4.png') center (center / cover) no-repeat;
+        }
+        &_bg5 {
+            background: url('../../img/4/4bg5.png') center (center / cover) no-repeat;
+        }
+        &_bg6 {
+            background: url('../../img/4/4bg6.png') center (center / cover) no-repeat;
+        }
+    }
+    &-item {
+        &__gb {
+            position: absolute;
+            width: 570px;
+            height: 156px;
+            background-color: #000000;
+            opacity: 0.44;
+            z-index: 0;
+        }
+        &__descr {
+            color: #ffffff;
+            font-size: 23px;
+            font-weight: 400;
+            text-align: center;
+            z-index: 1;
+        }
+    }
+}

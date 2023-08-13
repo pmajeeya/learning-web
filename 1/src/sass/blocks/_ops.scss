@@ -1,0 +1,60 @@
+.ops {
+    position: relative;
+    height: 580px;
+    &__title {
+        position: absolute;
+        top: 79px;
+        z-index: 10;
+    }
+    &__wrap {
+        height: 100%;
+        display: flex;
+    }
+    &__area {
+        width: 50%;
+        background: url('../../img/5/5bg1.png') center (center / cover) no-repeat;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: inherit;
+        flex-direction: column;
+        padding-right: 82px;
+        &_r {
+            background: url('../../img/5/5bg2.png') center (center / cover) no-repeat;
+            padding-left: 82px;
+            >.ops__sdescr, .ops__stitle {
+            text-align: left;
+            }
+            >.ops__ba {
+                left: 48px;
+            }
+        }
+    }
+    &__ba {
+        position: absolute;
+        right: 48px;
+        top: 232px;
+        width: 167px;
+        height: 167px;
+        background-color: #00c2f0;
+        opacity: 0.3;
+        z-index: 0;
+    }
+    &__stitle {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: right;
+        margin-top: 45px;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    &__sdescr {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: right;
+        margin-top: 20px;
+        z-index: 1;
+    }
+}

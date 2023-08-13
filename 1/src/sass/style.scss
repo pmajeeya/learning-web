@@ -1,0 +1,28 @@
+@import 'libs/font';
+
+* {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 890px;
+    }
+};
+
+@import 'blocks/button';
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/usp';
+@import 'blocks/wu';
+@import 'blocks/sol';
+@import 'blocks/bens';
+@import 'blocks/ops';
+@import 'blocks/link';
+@import 'blocks/footer';
